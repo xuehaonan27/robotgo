@@ -6,7 +6,11 @@
 	#include <X11/Xlib.h>
 	#include <X11/Xresource.h>
 	// #include "../base/xdisplay_c.h"
+#elif defined(IS_WINDOWS)
+	#include <windows.h>
 #endif
+#include <stdint.h>
+#include "types.h"
 
 intptr scaleX();
 

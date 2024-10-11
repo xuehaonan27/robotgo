@@ -11,6 +11,8 @@
 	#include <X11/Xlib.h>
 	#include <X11/extensions/XTest.h>
 	#include <stdlib.h>
+#elif defined(IS_WINDOWS)
+	#include "screen_c.h"
 #endif
 
 /* Some convenience macros for converting our enums to the system API types. */
